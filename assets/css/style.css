@@ -105,7 +105,23 @@ html, body {
     background-color: #000;
 }
 
+.info-block {
+    font-size: 120%;
 
+}
+
+.info-block .badge {
+    font-size: 80%;
+}
+
+.info-block span {
+    margin-right: 3%;
+}
+
+textarea.form-control {
+    height: 200px;
+    margin-bottom: 10px;
+}
 footer {
     color: #666;
     background: #222;
