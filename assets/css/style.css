@@ -126,6 +126,10 @@ textarea.form-control {
     height: 200px;
     margin-bottom: 10px;
 }
+
+.table tbody>tr>td.vert-aling {
+    vertical-align: middle;
+}
 footer {
     color: #666;
     background: #222;

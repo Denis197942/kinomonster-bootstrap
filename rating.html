@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Киномонстр</title>
+    <title>Киномонстр - Рейтинг фильмов</title>
 
     <!-- Bootstrap -->
     <link href="/assets/css/bootstrap.min.css" rel="stylesheet">
@@ -47,8 +47,8 @@
             </div>
             <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
               <ul class="nav nav-pills">
-                <li class="active">
-                  <a href="#">
+                <li>
+                  <a href="index.html">
                     Главная
                   </a> 
                 </li>
@@ -62,7 +62,7 @@
                     Сериалы
                   </a>
                 </li>
-                <li>
+                <li class="active">
                   <a href="rating.html">
                     Рейтинг фильмов
                   </a> 
@@ -73,6 +73,7 @@
                   </a> 
                 </li>
               </ul>
+
             </div>
           </div>
         </nav>
@@ -81,87 +82,98 @@
     <div class="wrapper">
       <div class="container">
         <div class="row">
-          <div class="col-lg-9 col-lg-push-3">
-            <form role="search" class="visible-xs">
-              <div class="form-group">
-                <div class="input-group">
-                  <input type="search" class="form-control input-lg" placeholder="ваш запрос">
-                  <div class="input-group-btn">
-                    <button class="btn btn-default btn-lg" type="submit">
-                      <i class="glyphicon glyphicon-search"></i>
-                    </button>
-                  </div>
-                </div>
+            <div class="col-lg-9 col-lg-push-3">
+                <form role="search" class="visible-xs">
+                    <div class="form-group">
+                      <div class="input-group">
+                        <input type="search" class="form-control input-lg" placeholder="ваш запрос">
+                        <div class="input-group-btn">
+                          <button class="btn btn-default btn-lg" type="submit">
+                            <i class="glyphicon glyphicon-search"></i>
+                          </button>
+                        </div>
+                    </div>
+                    <div class="row">
 
-              </div>
-            </form>
-            <h2>Новые фильмы</h2>
-            <hr>
-            <div class="row">
-              <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                <img src="/assets/img/inter.png" alt="interstaller poster">
-                <div class="film_label">Интерсталлер</div>
-              </div>
-              <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                <img src="/assets/img/matrix.png" alt="matrix poster">
-                <div class="film_label">Матрица</div>
-              </div>
-              <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                <img src="/assets/img/cloud.png" alt="cloud atlas poster">
-                <div class="film_label">Облачный атлас</div>
-              </div>
-              <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                <img src="/assets/img/max.png" alt="Безумный макс poster">
-                <div class="film_label">Безумный макс</div>
-              </div>
+                    </div>
+                    
+                    </div>
+                </form>
+                <h2>Рейтинг фильмов</h2>
+                <hr>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Фильм</th>
+                            <th class="text-center">Год</th>
+                            <th class="text-center">Рейтинг</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-striped">
+                        <tr>
+                            <td class="col-lg-1 col-md-1 col-xs-2">
+                                <img class="img-responsive img-thumbnail" src="assets/img/inter.png" alt="inter poster">
+                            </td>
+                            <td class="vert-aling">
+                                <a href="show.html">Интерсталлер</a>
+                            </td>
+                            <td class="text-center vert-aling">
+                                2014
+                            </td>
+                            <td class="text-center vert-aling">
+                                <span class="badge">8.9</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-lg-1 col-md-1 col-xs-2">
+                                <img class="img-responsive img-thumbnail" src="assets/img/cloud.png" alt="Облачный атлас">
+                            </td>
+                            <td class="vert-aling">
+                                <a href="#">Облачный атлас</a>
+                            </td>
+                            <td class="text-center vert-aling">
+                                2012
+                            </td>
+                            <td class="text-center vert-aling">
+                                <span class="badge">8.0</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-lg-1 col-md-1 col-xs-2">
+                                <img class="img-responsive img-thumbnail" src="assets/img/matrix.png" alt="Матрица">
+                            </td>
+                            <td class="vert-aling">
+                                <a href="show.html">Матрица</a>
+                            </td>
+                            <td class="text-center vert-aling">
+                                1999
+                            </td>
+                            <td class="text-center vert-aling">
+                                <span class="badge">7.9</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-lg-1 col-md-1 col-xs-2">
+                                <img class="img-responsive img-thumbnail" src="assets/img/max.png" alt="Безумный Макс">
+                            </td>
+                            <td class="vert-aling">
+                                <a href="#">Безумный Макс</a>
+                            </td>
+                            <td class="text-center vert-aling">
+                                2015
+                            </td>
+                            <td class="text-center vert-aling">
+                                <span class="badge">7.8</span>
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+                <div class="margin-8"></div>
             </div>
-            <h2>Сериалы</h2>
-            <hr>
-            <div class="row">
-              <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                <img src="/assets/img/xfiles.png" alt="xfiles poster">
-                <div class="film_label">Секретные материалы</div>
-              </div>
-              <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                <img src="/assets/img/silicon.png" alt="silicon dolina poster">
-                <div class="film_label">Кремневая долина</div>
-              </div>
-              <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                <img src="/assets/img/dead.png" alt="dead poster">
-                <div class="film_label">Ходячие мертвецы</div>
-              </div>
-              <div class="films_block col-lg-3 col-md-3 col-sm-3 col-xs-6">
-                <img src="/assets/img/breakingbad.png" alt="breakingbad poster">
-                <div class="film_label">Во все тяжкие</div>
-              </div>
-            </div>
-            <div class="margin-8"></div>
-          <a href="#">
-            <h3>
-              Как снимали Интерсталлер
-            </h3>
-          </a>
-          <hr>
-          <p>
-            На CinemaCon 2014 Кристофер Нолан сказал, что для него «Интерстеллар» - это возвращение к фильмам, которые он смотрел в детстве. В частности, он говорил о «Космической одиссеи» 2001 года, говоря, что она оказала огромное влияние на его карьеру. Он и его команда, которая работала над созданием «Интерстеллара» также смотрели космический эпос Филипа Кауфмана «Парни что надо» 1983 года, который сам Нолан оценил очень высоко. 
-          </p>
-          <a href="#" class="btn btn-warning pull-right">Читать</a>
-          <div class="margin-8"></div>
-          <a href="#">
-            <h3>
-              Актёр Том Хэнкс поделился впечатлением о фестивале
-            </h3>
-          </a>
-          <hr>
-          <p>
-            16 февраля в Лондоне состоялась 67-я церемония вручения наград Британской киноакадемии. Леонардо ДиКаприо, Брэд Питт, Анджелина Джоли, Кейт Бланшетт, Хелен Миррен, Эми Адамс, Кристиан Бэйл, Альфонсо Куарон и другие гости и победители премии — в нашем репортаже 
-          </p>
-          <a href="#" class="btn btn-warning pull-right">Читать</a>
-          <div class="margin-8 clear"></div>
-
-          </div>
           <div class="col-lg-3 col-lg-pull-9">
-            <div class="panel panel-info  hidden-xs">
+            <div class="panel panel-info hidden-xs">
               <div class="panel-heading">
                 <div class="sidebar-header">
                   Поиск
